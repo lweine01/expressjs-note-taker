@@ -5,7 +5,7 @@ const db = require('../db/db.json');
 
 const savedNotes = db && db.length ? db : [];
 
-router.post('/notes', (req, res) => {
+router.post('/api/notes', (req, res) => {
     console.info(`${req.method} request received to add a note`);
   
     const { title, text } = req.body;
