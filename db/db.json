@@ -1,17 +1,12 @@
 [
   {
-    "title": "hello",
-    "text": "hi",
-    "note_id": "473a"
+    "title": "Grocery List",
+    "text": "Milk\nEggs\nCheese\nSpinach",
+    "id": "cdc0"
   },
   {
-    "title": "Hello",
-    "text": "This is a note",
-    "note_id": "45fb"
-  },
-  {
-    "title": "New Note",
-    "text": "This is a new note",
-    "note_id": "b2b6"
+    "title": "Doctor's Appointment",
+    "text": "Wednesday",
+    "id": "c828"
   }
 ]

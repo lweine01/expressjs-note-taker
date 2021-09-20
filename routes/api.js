@@ -9,16 +9,6 @@ router.get('/api/notes', (req, res) => {
   res.json(savedNotes);
 })
 
-router.get('/api/notes/:note_id', (req, res) => {
-  console.log(req.params.id);
-  savedNotes.forEach ((data) => {
-    if (req.params.id === data.req.params.id) {
-      return res.json(data);
-    }
-  })
-  return res.json(false);
-})
-
 router.post('/api/notes', (req, res) => {
     console.info(`${req.method} request received to add a note`);
   
