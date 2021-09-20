@@ -25,7 +25,7 @@ router.post('/api/notes', (req, res) => {
   
       const noteStr = JSON.stringify(savedNotes, null, 2);
   
-      fs.writeFile(`./db/db.json`, noteStr, (err) =>
+      fs.writeFile('./db/db.json', noteStr, (err) =>
         err
           ? console.error(err)
           : console.log(
@@ -44,5 +44,19 @@ router.post('/api/notes', (req, res) => {
       res.status(500).json('Error in posting note');
     }
   });
+
+  router.delete('/api/notes/:id', (req, res) => {
+    savedNotes.splice(req.params.id, 1);
+    const noteStr = JSON.stringify(savedNotes, null, 2)
+    
+    fs.writeFile('./db/db.json', noteStr, (err) =>
+        err
+          ? console.error(err)
+          : console.log(
+              `Note has been deleted from JSON file`
+            ));
+
+    return res.json(savedNotes);
+  })
 
   module.exports = router;
