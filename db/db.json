@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "title": "Grocery List",
+    "text": "Milk\nEggs\nCheese",
+    "id": "1a4c"
+  },
+  {
+    "title": "Exercise Routine",
+    "text": "Lift Weights MWF\nRun TTh",
+    "id": "6f59"
+  },
+  {
+    "title": "Doctors Appointment",
+    "text": "Wednesday at noon",
+    "id": "2968"
+  }
+]
